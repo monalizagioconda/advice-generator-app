@@ -1,0 +1,84 @@
+:root {
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-style: normal;
+  font-family: "Manrope", sans-serif;
+}
+
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.attribution { 
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main {
+  background-color: var(--color-dark-blue);
+  width: 1440px;
+  height: 720px;
+}
+
+.sheet {
+  width: 480px;
+  background-color: var(--color-dark-grayish-blue);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.advice {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--color-neon-green);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.quote {
+  font-size: 28px;
+  color: var(--color-light-cyan);
+  font-weight: 800;
+  text-align: center;
+  padding: 20px 20px 38px;
+  margin: 0;
+}
+
+.sheet img {
+  margin-bottom: 25px;
+}
+
+.button {
+  --size: 50px;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--color-neon-green);
+  padding: 5px;
+  position: relative;
+  top: calc(-0.5 * var(--size));
+  cursor: pointer;
+}
+
+.button:active {
+  box-shadow: 0 0 25px 2px var(--color-neon-green);
+}
