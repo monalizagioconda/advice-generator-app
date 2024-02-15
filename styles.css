@@ -41,7 +41,7 @@ body {
 }
 
 .sheet {
-  width: 480px;
+  width: 520px;
   background-color: var(--color-dark-grayish-blue);
   border-radius: 10px;
   padding: 40px;
@@ -61,12 +61,12 @@ body {
   color: var(--color-light-cyan);
   font-weight: 800;
   text-align: center;
-  padding: 20px 20px 38px;
-  margin: 0;
+  margin: 20px 0 38px;
 }
 
 .sheet img {
   margin-bottom: 25px;
+  width: 100%;
 }
 
 .button {
@@ -76,12 +76,16 @@ body {
   height: var(--size);
   border-radius: 50%;
   background-color: var(--color-neon-green);
-  padding: 5px;
   position: relative;
   top: calc(-0.5 * var(--size));
   cursor: pointer;
 }
 
+.button img {
+  width: 20px;
+}
+
 .button:active {
   box-shadow: 0 0 25px 2px var(--color-neon-green);
 }
+  
