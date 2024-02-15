@@ -57,7 +57,7 @@ body {
 }
 
 .quote {
-  font-size: 28px;
+  font-size: 24px;
   color: var(--color-light-cyan);
   font-weight: 800;
   text-align: center;
@@ -88,4 +88,17 @@ body {
 .button:active {
   box-shadow: 0 0 25px 2px var(--color-neon-green);
 }
-  
+
+@media only screen and (max-width: 376px) {
+  .attribution {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+  .sheet {
+    width: auto;
+    margin: 0 15px;
+  }
+}
